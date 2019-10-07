@@ -1,5 +1,5 @@
 #include<conio.h>
-#include<iostream.h>
+#include<stdio.h>
 
 int fact(int x)
 	{
@@ -14,8 +14,8 @@ int fact(int x)
 void main()
 	{
 		int x,a;
-		cout<<"Enter any Number\n";
-		cin>>x;
+		printf("Enter any Number\n");
+		scanf("%d",&x);
 		a= fact(x);
-		cout<<"\nFactorial = "<<a;
+		printf("\nFactorial = %d", a);
 	}
