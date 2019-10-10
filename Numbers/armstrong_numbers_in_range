@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int n,sum,t,a;
+    printf("Input: %d",n);
+    scanf("%d", &n);
+    printf("The Armstrong numbers are: ");
+
+    for(int i = 1; i <= n; i++)
+    {
+        t = i;  
+        sum = 0;
+        while(t != 0)
+        {
+            a = t%10;
+            sum += a*a*a;
+            t = t/10;
+        }
+        if(sum == i)
+        printf("\n%d", i);
+    }
+}
